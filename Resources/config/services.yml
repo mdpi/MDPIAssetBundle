@@ -1,0 +1,6 @@
+services:
+    twig.extension.assets:
+        class: MDPI\AssetBundle\Extension\AssetsExtension
+        arguments: [@service_container]
+        tags:
+            - { name: twig.extension }
