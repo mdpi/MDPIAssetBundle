@@ -43,6 +43,7 @@ public function registerBundles()
         );
 
 // ...
+?>
 ```
 
 5. remove the global assets version from your config file if it's used.
