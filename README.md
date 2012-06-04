@@ -2,7 +2,7 @@ MDPIAssetBundle
 ===================
 
 In order to get rid of the global assets version in Symfony2.<br>
-The bundle provided a command "mdpi:assets:versions" to generate a list of assets with its unique version, which then can be used by the twig helper function "asset()"
+The bundle provided a command "mdpi:assets:versions" to generate a list of assets with its unique version numbers, which then can be used by the twig helper function "asset()"
 
 Install
 -------
