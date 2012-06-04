@@ -8,11 +8,12 @@ Install
 -------
 
 1. add the bundle into your deps:
-
+```
 [MDPIAssetBundle]
     git=git@git://github.com/mdpi/MDPIAssetBundle.git
     version=origin/master
     target=/bundles/MDPI/AssetBundle
+```
 
 2. run "bin/vendors install"
 
