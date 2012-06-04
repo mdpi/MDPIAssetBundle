@@ -41,7 +41,6 @@ public function registerBundles()
             // ...
             new MDPI\AssetBundle\MDPIAssetBundle(),
         );
-
 // ...
 ?>
 ```
