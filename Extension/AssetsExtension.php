@@ -49,6 +49,14 @@ class AssetsExtension extends \Twig_Extension
         if (isset($assets[$path])) {
             $url = str_replace($path, $path . '?' . $assets[$path], $url);
         }
+        # fix insecure issues when we using https
+        if (isset($_SERVER["SERVER_PORT"]) && $_SERVER["SERVER_PORT"] == 443) {
+            $url = preg_replace(
+                '!^http://img\.mdpi\.org/!', 
+                'https://' . $_SERVER["SERVER_NAME"] . '/', 
+                $url
+            );
+        }
         return $url;
     }
 
