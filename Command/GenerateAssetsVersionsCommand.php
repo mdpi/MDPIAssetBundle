@@ -28,7 +28,7 @@ class GenerateAssetsVersionsCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this->setName("mdpi:assets:versions")->
-            setDescription("generate version number (git log) for each asset file")->
+            setDescription("generate version number for each asset file, it's based on the file's content")->
             addArgument("bundle", InputArgument::OPTIONAL, "bundle name, generate only for the specified bundle if set")->
             addOption(
                 'trim-bundlename', 
