@@ -1,0 +1,18 @@
+{
+    "name": "mdpi/asset-bundle",
+    "type": "symfony-bundle",
+    "description": "MDPIAssetBundle",
+    "homepage": "http://www.mdpi.com",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "MDPI\\AssetBundle\\": "" }
+    },
+    "target-dir": "MDPI/AssetBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
