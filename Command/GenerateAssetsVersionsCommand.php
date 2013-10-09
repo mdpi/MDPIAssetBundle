@@ -33,10 +33,9 @@ class GenerateAssetsVersionsCommand extends ContainerAwareCommand
             addOption(
                 'trim-bundlename', 
                 't', 
-                InputOption::VALUE_OPTIONAL, 
+                InputOption::VALUE_NONE, 
                 'If set, bundle names will be removed from the generated assets path'
             );
-        
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
